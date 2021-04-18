@@ -27,7 +27,8 @@ extension SessionManager {
                         return
                 }
                 result = .success(parsedResponse)
-            case .failure:
+            case .failure(let error):
+                print("API Error: ", error)
                 result = .failure(.server)
             }
             completion(result)
