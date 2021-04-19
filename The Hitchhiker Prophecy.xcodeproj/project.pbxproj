@@ -40,11 +40,12 @@
 		76C7AE482497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */; };
 		76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */; };
 		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
-		76C7AE50249803460053EF25 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
 		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
+		E18AF567262CABB3000AD1A8 /* HomeSceneCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */; };
+		E18AF579262CC282000AD1A8 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
+		E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneCollectionManager.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -339,6 +341,7 @@
 				01AD2905249577B9006AF9D0 /* HomeScenePresenter.swift */,
 				017EC1D22496484A00CB124A /* HomeSceneConfigurator.swift */,
 				76C7AE3E2497AFBE0053EF25 /* HomeSceneRouter.swift */,
+				E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */,
 			);
 			path = "Home Scene";
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			files = (
 				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
 				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
+				E18AF579262CC282000AD1A8 /* HomeCharacterCollectionViewCell.xib in Resources */,
 				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
 				01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */,
 			);
@@ -529,6 +533,7 @@
 				019ACF93249276FC003E3ECF /* HomeWorker.swift in Sources */,
 				019ACF8124925E15003E3ECF /* CharacterRouter.swift in Sources */,
 				76C7AE3F2497AFBE0053EF25 /* HomeSceneRouter.swift in Sources */,
+				E18AF567262CABB3000AD1A8 /* HomeSceneCollectionManager.swift in Sources */,
 				A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */,
 				019ACF8C24926E0E003E3ECF /* Encodable+Dictionary.swift in Sources */,
 				01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */,
