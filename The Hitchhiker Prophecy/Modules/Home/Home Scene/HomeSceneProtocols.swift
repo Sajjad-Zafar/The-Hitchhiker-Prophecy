@@ -16,6 +16,10 @@ protocol HomeSceneDisplayView: class {
     func failedToFetchCharacters(error: Error)
 }
 
+protocol HomeSceneCollectionManagerDelegate {
+    func didSelectCharacter(character: HomeScene.Search.ViewModel, atIndexPath indexPath: IndexPath)
+}
+
 protocol HomeSceneBusinessLogic: class {
     var worker: HomeWorkerType { get }
     var presenter: HomeScenePresentationLogic { get }

@@ -11,6 +11,8 @@ import UIKit
 
 class HomeSceneCollectionManager: NSObject {
     
+    var homeSceneCollectionManagerDelegate: HomeSceneCollectionManagerDelegate?
+    
     let viewModel: [HomeScene.Search.ViewModel]
     var layout: Layout
     
@@ -37,6 +39,10 @@ extension HomeSceneCollectionManager: UICollectionViewDelegate, UICollectionView
         }
         cell.configure(with: self.viewModel[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.homeSceneCollectionManagerDelegate?.didSelectCharacter(character: self.viewModel[indexPath.row], atIndexPath: indexPath)
     }
 }
 

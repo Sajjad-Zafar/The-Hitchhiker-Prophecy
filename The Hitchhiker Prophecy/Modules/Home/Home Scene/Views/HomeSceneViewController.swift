@@ -57,10 +57,17 @@ extension HomeSceneViewController: HomeSceneDisplayView {
         homeSceneCollectionManager = HomeSceneCollectionManager(viewModel: viewModel, layout: self.layout)
         collectionView.delegate = self.homeSceneCollectionManager
         collectionView.dataSource = self.homeSceneCollectionManager
+        homeSceneCollectionManager?.homeSceneCollectionManagerDelegate = self
         collectionView.reloadData()
     }
     
     func failedToFetchCharacters(error: Error) {
         // TODO: Implement
+    }
+}
+
+extension HomeSceneViewController: HomeSceneCollectionManagerDelegate {
+    func didSelectCharacter(character: HomeScene.Search.ViewModel, atIndexPath indexPath: IndexPath) {
+        router?.routeToCharacterDetailsWithCharacter(at: indexPath.row)
     }
 }
