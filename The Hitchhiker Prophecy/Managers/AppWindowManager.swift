@@ -14,6 +14,7 @@ enum AppWindowManager {
         let controller = HomeSceneConfigurator.configure()
         window.rootViewController = controller
         window.makeKeyAndVisible()
+        self.window = window
     }
 }
 
