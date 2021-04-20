@@ -46,6 +46,9 @@
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 		E18AF567262CABB3000AD1A8 /* HomeSceneCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */; };
 		E18AF579262CC282000AD1A8 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
+		E18AF5B0262EC302000AD1A8 /* HomeScenePresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */; };
+		E18AF5C1262ED466000AD1A8 /* MarvelMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */; };
+		E18AF5D3262EE895000AD1A8 /* MarvelMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,8 @@
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
 		E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneCollectionManager.swift; sourceTree = "<group>"; };
+		E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresenterTestCase.swift; sourceTree = "<group>"; };
+		E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = MarvelMockData.json; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
+				E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */,
+				E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
 			path = "The Hitchhiker ProphecyTests";
@@ -453,6 +460,7 @@
 			files = (
 				76C7AE392497AD920053EF25 /* CharacterDetailsSceneViewController.xib in Resources */,
 				01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */,
+				E18AF5D3262EE895000AD1A8 /* MarvelMockData.json in Resources */,
 				E18AF579262CC282000AD1A8 /* HomeCharacterCollectionViewCell.xib in Resources */,
 				76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */,
 				01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */,
@@ -463,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18AF5C1262ED466000AD1A8 /* MarvelMockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18AF5B0262EC302000AD1A8 /* HomeScenePresenterTestCase.swift in Sources */,
 				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +640,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -684,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -740,6 +750,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -759,6 +770,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "The Hitchhiker ProphecyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
