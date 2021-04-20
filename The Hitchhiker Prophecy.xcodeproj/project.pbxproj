@@ -49,6 +49,7 @@
 		E18AF5B0262EC302000AD1A8 /* HomeScenePresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */; };
 		E18AF5C1262ED466000AD1A8 /* MarvelMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */; };
 		E18AF5D3262EE895000AD1A8 /* MarvelMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */; };
+		E18AF60A262F5A2D000AD1A8 /* HomeSceneInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AF609262F5A2D000AD1A8 /* HomeSceneInteractorTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		E18AF566262CABB3000AD1A8 /* HomeSceneCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneCollectionManager.swift; sourceTree = "<group>"; };
 		E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresenterTestCase.swift; sourceTree = "<group>"; };
 		E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = MarvelMockData.json; sourceTree = "<group>"; };
+		E18AF609262F5A2D000AD1A8 /* HomeSceneInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractorTestCase.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -237,6 +239,7 @@
 			children = (
 				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
 				E18AF5AF262EC302000AD1A8 /* HomeScenePresenterTestCase.swift */,
+				E18AF609262F5A2D000AD1A8 /* HomeSceneInteractorTestCase.swift */,
 				E18AF5C0262ED466000AD1A8 /* MarvelMockData.json */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
@@ -565,6 +568,7 @@
 			files = (
 				E18AF5B0262EC302000AD1A8 /* HomeScenePresenterTestCase.swift in Sources */,
 				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
+				E18AF60A262F5A2D000AD1A8 /* HomeSceneInteractorTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
